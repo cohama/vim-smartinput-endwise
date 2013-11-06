@@ -22,9 +22,9 @@ function! smartinput_endwise#define_default_rules()
   " }}}
 
   " sh rules {{{
-  call s:define_rule('sh', '^\s*if\>.*\%#', 'fi', '')
-  call s:define_rule('sh', '^\s*case\>.*\%#', 'esac', '')
-  call s:define_rule('sh', '\%(^\s*#.*\)\@<!do\>.*\%#', 'done', '')
+  call s:define_rule(['sh', 'zsh'], '^\s*if\>.*\%#', 'fi', '')
+  call s:define_rule(['sh', 'zsh'], '^\s*case\>.*\%#', 'esac', '')
+  call s:define_rule(['sh', 'zsh'], '\%(^\s*#.*\)\@<!do\>.*\%#', 'done', '')
   " }}}
 endfunction
 
