@@ -1,8 +1,8 @@
-#smartinput\_endwise.vim
+# vim-smartinput-endwise
 `vim-endwise` implementation in `vim-smartinput`
 
 ##INTRODUCTION
-`smartinput_endwise` is an extension of `vim-smartinput` to provide thefeature of `vim-endwise`.  
+`vim-smartinput-endwise` is an extension of `vim-smartinput` to provide thefeature of `vim-endwise`.  
 
 You can avoid a confliction between `vim-endwise` and `vim-smartinput`.  
 

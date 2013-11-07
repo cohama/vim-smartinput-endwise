@@ -37,7 +37,7 @@ CHANGELOG			|smartinput_endwise-changelog|
 ==============================================================================
 INTRODUCTION					*smartinput_endwise-introduction*
 
-*smartinput_endwise* is an extension of |vim-smartinput| to provide the
+*vim-smartinput-endwise* is an extension of |vim-smartinput| to provide the
 feature of |vim-endwise|.
 
 You can avoid a confliction between |vim-endwise| and |vim-smartinput|.
