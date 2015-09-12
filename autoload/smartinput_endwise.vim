@@ -11,7 +11,7 @@ function! smartinput_endwise#define_default_rules()
   " ruby-rules {{{
   call s:define_rule('ruby', '^\s*\%(module\|def\|class\|if\|unless\|for\|while\|until\|case\)\>\%(.*[^.:@$]\<end\>\)\@!.*\%#', 'end', '')
   call s:define_rule('ruby', '^\s*\%(begin\)\s*\%#', 'end', '')
-  call s:define_rule('ruby', '\%(^\s*#.*\)\@<!do\%(\s*|\k\+|\)\?\s*\%#', 'end', '')
+  call s:define_rule('ruby', '\%(^\s*#.*\)\@<!do\%(\s*|\k\+\%(\s*,\s*\k\+\)*|\)\?\s*\%#', 'end', '')
   call smartinput#define_rule({
   \ 'at': '\<\%(if\|unless\)\>.*\%#',
   \ 'char': '<CR>',
